@@ -13,6 +13,7 @@ function btnEncriptar(){
         mensaje.style.backgroundImage = "none";
         document.getElementById("btn_copiar").removeAttribute("style");
         document.querySelector(".instrucciones_mensaje").setAttribute("style","visibility:hidden");
+        document.querySelector(".mensaje").removeAttribute("disabled");
         
         
         
@@ -48,6 +49,7 @@ function btnDesencriptar(){
         mensaje.style.backgroundImage = "none";
         document.getElementById("btn_copiar").removeAttribute("style");
         document.querySelector(".instrucciones_mensaje").setAttribute("style","visibility:hidden");
+        document.querySelector(".mensaje").removeAttribute("disabled");
         
     }    
     return;
@@ -83,6 +85,7 @@ function copiar(){
             mensaje.style.backgroundImage= "url(imagenes/Muneco.png)";
             document.querySelector(".instrucciones_mensaje").removeAttribute("style");
             document.querySelector("#btn_copiar").setAttribute("style","visibility:hidden;");
+            document.querySelector(".mensaje").setAttribute("disabled","true");
         return;
 }
 
